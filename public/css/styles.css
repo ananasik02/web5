@@ -1,0 +1,147 @@
+body {
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+input {
+    width: 320px;
+    padding: 8px;
+    border: 1px solid #e1e3e9;
+    border-radius: 6px;
+}
+
+input:active,
+input:focus {
+    outline: none;
+}
+
+label {
+    margin: 12px 0 8px 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.submit-button {
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #769656;
+    margin-top: 16px;
+    color: #fff;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    border: none;
+}
+
+.submit-button:hover {
+    transform: scale(1.05);
+}
+
+.links {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+table {
+    border-collapse: collapse;
+    background: #eeeed2;
+}
+
+td {
+    width: 100px; height: 100px;
+    position: relative;
+    padding: 0;
+}
+
+tr:nth-child(odd) td:nth-child(even), tr:nth-child(even) td:nth-child(odd) {
+    background: #769656;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+a{
+    font-size: 16px;
+    color: #779952;
+    text-decoration: none;
+    transition: opacity 0.3s ease-in-out;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+.coordinate-dark{
+    font-size: 20px;
+    font-weight: 600;
+    color: #779952;
+}
+
+.coordinate-light{
+    font-size: 20px;
+    font-weight: 600;
+    color: #eeeed2;
+}
+
+.numbers{
+    display: block;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+}
+
+.symbol{
+    display: block;
+    position: absolute;
+    right: 4px;
+    bottom: 4px;
+}
+
+input.invalid{
+    border-color: #900;
+    background-color: #FDD;
+}
+
+input:focus.invalid {
+    outline: none;
+}
+
+/* This is the style of our error messages */
+.error {
+    width  : 100%;
+    padding: 0;
+
+    font-size: 80%;
+    color: white;
+    background-color: #900;
+    border-radius: 0 0 5px 5px;
+
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.error.active {
+    padding: 0.3em;
+}
